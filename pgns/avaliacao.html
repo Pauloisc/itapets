@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação e Comentários</title>
+</head>
+<body>
+    <header>
+        <h1>Avaliação e Comentários</h1>
+        <p>Deixe sua opinião sobre o nosso site!</p>
+    </header>
+
+    <main>
+        <form action="mailto:pauloitalo061@gmail.com" method="POST" enctype="text/plain">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome." size="40" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="emailexemplo@gmail.com" size="40" required><br><br>
+
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 90000-0000" maxlength="15" size="15" required><br><br>
+
+            <label for="comentarios">Comentários:</label><br>
+            <textarea id="comentarios" name="comentarios" placeholder="Deixe aqui o seu comentário ou avaliação sobre o nosso site." rows="5" cols="42" required></textarea><br><br>
+
+            <button type="reset">Limpar Formulário</button>
+            <button type="submit">Enviar Avaliação</button>
+        </form>
+    </main>
+
+    <footer>
+        <br>
+        <a href="../index.html">Retornar para a página principal</a>
+    </footer>
+</body>
+</html>
