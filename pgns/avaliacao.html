@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Deixe sua avaliação e comentários sobre a ItaPets.">
+    <link rel="icon" href="../img/logo.webp" type="image/webp">
     <title>Avaliação e Comentários</title>
 </head>
 <body>
@@ -13,20 +15,23 @@
 
     <main>
         <form action="mailto:pauloitalo061@gmail.com" method="POST" enctype="text/plain">
-            <label for="nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome." size="40" required><br><br>
+            <fieldset>
+                <legend>Seus Dados e Comentários</legend>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome." size="40" required><br><br>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" placeholder="emailexemplo@gmail.com" size="40" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="emailexemplo@gmail.com" size="40" required><br><br>
 
-            <label for="telefone">Telefone:</label><br>
-            <input type="tel" id="telefone" name="telefone" placeholder="(00) 90000-0000" maxlength="15" size="15" required><br><br>
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 90000-0000" maxlength="15" size="15" required><br><br>
 
-            <label for="comentarios">Comentários:</label><br>
-            <textarea id="comentarios" name="comentarios" placeholder="Deixe aqui o seu comentário ou avaliação sobre o nosso site." rows="5" cols="42" required></textarea><br><br>
+                <label for="comentarios">Comentários:</label><br>
+                <textarea id="comentarios" name="comentarios" placeholder="Deixe aqui o seu comentário ou avaliação sobre o nosso site." rows="5" cols="42" required></textarea><br><br>
 
-            <button type="reset">Limpar Formulário</button>
-            <button type="submit">Enviar Avaliação</button>
+                <button type="reset">Limpar Formulário</button>
+                <button type="submit">Enviar Avaliação</button>
+            </fieldset>
         </form>
     </main>
 
