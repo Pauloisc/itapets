@@ -1,0 +1,23 @@
+.grid_produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px; 
+    padding: 15px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.grid_produtos article {
+    border: 2px solid green;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.grid_produtos article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
