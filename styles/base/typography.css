@@ -21,6 +21,15 @@
   font-size: 50px;
 }
 
+.sub_titulo {       
+  color: #f8f7f6;               
+  padding: 8px 16px;            
+  margin: 20px auto;            
+  text-align: center;
+  font-family: 'Oswald Bold', sans-serif;
+  font-size: 30px;
+}
+
 .precos {
     color: #ffffff;               
     padding: 8px 16px;            
