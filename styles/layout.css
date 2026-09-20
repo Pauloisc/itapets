@@ -7,7 +7,6 @@
 }
 
 .grid_produtos article {
-    border: 2px solid green;
     padding: 10px;
     text-align: center;
     display: flex;
@@ -20,9 +19,4 @@
     height: auto;
     display: block;
     margin: 0 auto;
-}
-
-.h1 {
-    text-align: center;
-    margin-top: 20px;
 }
