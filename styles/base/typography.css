@@ -1,5 +1,41 @@
-.h1 {
+@font-face {
+  font-family: 'Oswald Bold';
+  src: url('../../assets/fontes/Oswald-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oswald Light';
+  src: url('../../assets/fontes/Oswald-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.titulo {       
+  color: #f8f7f6;               
+  padding: 8px 16px;            
+  margin: 20px auto;            
+  text-align: center;
+  font-family: 'Oswald Bold', sans-serif;
+  font-size: 50px;
+}
+
+.precos {
+    color: #ffffff;               
+    padding: 8px 16px;            
+    margin: 20px auto;            
     text-align: center;
-    margin-top: 20px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Oswald Light', sans-serif;
+    font-size: 25px;
+}
+
+.descricoes {
+    color: #ffffff;                                     
+    text-align: center;
+    font-family: 'Oswald Light', sans-serif;
+    font-size: 20px;
+    margin-top: 5px;     
+    margin-bottom: 5px;  
+    line-height: 1.2;
 }

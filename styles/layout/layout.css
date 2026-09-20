@@ -1,9 +1,19 @@
+.body {
+    background-color: #27A2D9
+}
+
+.header{
+    text-align: center;
+    .header img {
+        margin-bottom: 20px;
+    }
+}
+
 .grid_produtos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px; 
     padding: 15px;
-    border: 3px solid rgb(0, 0, 0);
 }
 
 .grid_produtos article {
@@ -12,6 +22,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background:#3193c0;
 }
 
 .grid_produtos article img {
@@ -21,9 +32,10 @@
     margin: 0 auto;
 }
 
-.header{
-    text-align: center;
-    .header img {
-        margin-bottom: 20px;
-    }
+.footer {
+    gap: 15px; 
+    padding: 15px;               
+    margin: 0 15px;              
+    background: #3193c0;
+    box-sizing: border-box;     
 }
