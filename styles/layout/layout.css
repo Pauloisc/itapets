@@ -20,3 +20,10 @@
     display: block;
     margin: 0 auto;
 }
+
+.header{
+    text-align: center;
+    .header img {
+        margin-bottom: 20px;
+    }
+}
