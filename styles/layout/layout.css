@@ -1,3 +1,5 @@
+/* Layout da pagina principal */
+
 .body {
     background-color: #27A2D9
 }
@@ -14,6 +16,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 15px; 
     padding: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); 
 }
 
 .grid_produtos article {
@@ -40,5 +43,90 @@
     padding: 15px;               
     margin: 0 15px;              
     background: #3193c0;
-    box-sizing: border-box;     
+    box-sizing: border-box;    
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);  
+}
+
+/* Layout da pagina de detalhes do produto */
+
+.container-duas-colunas {
+  display: flex;
+  flex-direction: row; 
+  align-items: flex-start;
+  gap: 30px;
+  
+  background-color: #3193c0; 
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); 
+}
+
+.coluna-imagem, 
+.coluna-texto {
+  flex: 1;
+  text-align: left;
+}
+
+/* Formularios de compra */
+
+form {
+  max-width: 600px; 
+  margin: 0 auto 40px auto;
+}
+
+fieldset {
+  background-color: #3193c0;
+  border: none;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+legend {
+  background-color: #ff9900; 
+  color: #ffffff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Botões modernos */
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  background-color: #27ae60;
+  color: white;
+}
+
+button[type="reset"] {
+  background-color: #e74c3c;
+  color: white;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .container-duas-colunas {
+    flex-direction: column;
+    padding: 15px;
+  }
 }

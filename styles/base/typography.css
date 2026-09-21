@@ -48,3 +48,47 @@
     margin-bottom: 5px;  
     line-height: 1.2;
 }
+
+/* Estilos para a página de detalhes do produto */
+
+.detalhes_produto {       
+  color: #f8f7f6;               
+  padding: 8px 16px;            
+  margin: 20px auto;            
+  text-align: center;
+  font-family: 'Oswald Bold', sans-serif;
+  font-size: 30px;
+}
+
+.coluna-texto h2 {
+  color: #1a1a1a;
+  margin-top: 0;
+}
+
+.coluna-texto p {
+  color: #1a1a1a;
+  line-height: 1.6;
+  text-align: justify;
+  font-family: 'Oswald Light', sans-serif;
+}
+
+/* Tipografias generalistas */
+
+.p {
+    color: #1a1a1a;                                     
+    text-align: justify;
+    font-family: 'Oswald Light', sans-serif;
+    font-size: 20px;   
+    margin-bottom: 5px;  
+    line-height: 1.2;
+}
+
+.lista {
+    color: #1a1a1a;                                     
+    text-align: left;
+    font-family: 'Oswald Light', sans-serif;
+    font-size: 20px;   
+    margin-bottom: 5px;  
+    line-height: 1.2;
+    text-align: justify;
+}
