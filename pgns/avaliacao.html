@@ -1,63 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-br">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <meta content="Deixe sua avaliação e comentários sobre a ItaPets." name="description"/>
-  <link href="../assets/img/logo.webp" rel="icon" type="image/webp"/>
-  <title>
-   Avaliação e Comentários
-  </title>
-  <link href="../styles/main.css" rel="stylesheet"/>
- </head>
- <body class="body">
-  <header>
-   <h1 class="titulo">
-    Avaliação e Comentários
-   </h1>
-  </header>
-  <main>
-   <form action="mailto:pauloitalo061@gmail.com" enctype="text/plain" method="POST">
-    <fieldset>
-     <legend>
-      Seus Dados e Comentários
-     </legend>
-     <label for="nome">
-      Nome:
-     </label>
-     <br/>
-     <input id="nome" name="nome" placeholder="Digite seu nome." required="" size="40" type="text"/>
-     <br/>
-     <br/>
-     <label for="email">
-      Email:
-     </label>
-     <br/>
-     <input id="email" name="email" placeholder="emailexemplo@gmail.com" required="" size="40" type="email"/>
-     <br/>
-     <br/>
-     <label for="telefone">
-      Telefone:
-     </label>
-     <br/>
-     <input id="telefone" maxlength="15" name="telefone" placeholder="(00) 90000-0000" required="" size="15" type="tel"/>
-     <br/>
-     <br/>
-     <label for="comentarios">
-      Comentários:
-     </label>
-     <br/>
-     <textarea cols="42" id="comentarios" name="comentarios" placeholder="Deixe aqui o seu comentário ou avaliação sobre o nosso site." required="" rows="5"></textarea>
-     <br/>
-     <br/>
-     <button type="reset">
-      Limpar Formulário
-     </button>
-     <button type="submit">
-      Enviar Avaliação
-     </button>
-    </fieldset>
-   </form>
-  </main>
- </body>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta
+      content="Avalie a ItaPets e deixe seu comentário sobre nossos produtos e atendimento."
+      name="description">
+    <link href="../assets/img/logo.webp" rel="icon" type="image/webp">
+    <title>Avalie a ItaPets | Deixe seu Comentário e Nota</title>
+    <link href="../styles/main.css" rel="stylesheet">
+  </head>
+  <body class="body">
+    <header>
+      <a href="../index.html">
+        <img alt="Logotipo da ItaPets" src="../assets/img/logo.webp">
+      </a>
+      <h1>Avaliação e Comentários</h1>
+    </header>
+    <main>
+      <form action="mailto:pauloitalo061@gmail.com" enctype="text/plain" method="POST">
+        <fieldset>
+          <legend>Seus Dados e Comentários</legend>
+
+          <label for="nome">Nome:</label>
+          <input
+            id="nome"
+            name="nome"
+            placeholder="Digite seu nome."
+            required
+            size="40"
+            type="text">
+
+          <label for="email">Email:</label>
+          <input
+            id="email"
+            name="email"
+            placeholder="emailexemplo@gmail.com"
+            required
+            size="40"
+            type="email">
+
+          <label for="telefone">Telefone:</label>
+          <input
+            id="telefone"
+            maxlength="15"
+            name="telefone"
+            placeholder="(00) 90000-0000"
+            required
+            size="15"
+            type="tel">
+
+          <label for="data_compra">Data da compra:</label>
+          <input id="data_compra" name="data_compra" type="date">
+
+          <label for="tipo_pet">Tipo de pet:</label>
+          <select id="tipo_pet" name="tipo_pet">
+            <option value="">Selecione...</option>
+            <option value="cao">Cão</option>
+            <option value="gato">Gato</option>
+            <option value="roedor">Roedor (Hamster, Gerbil...)</option>
+            <option value="passaro">Pássaro</option>
+            <option value="outro">Outro</option>
+          </select>
+
+          <p>Categorias que você comprou:</p>
+          <input id="cat_racao" name="categorias" type="checkbox" value="racao">
+          <label for="cat_racao">Ração</label>
+          <input id="cat_brinquedo" name="categorias" type="checkbox" value="brinquedo">
+          <label for="cat_brinquedo">Brinquedo</label>
+          <input id="cat_acessorio" name="categorias" type="checkbox" value="acessorio">
+          <label for="cat_acessorio">Acessório</label>
+
+          <p>Como nos conheceu?</p>
+          <input id="origem_google" name="origem" type="radio" value="google">
+          <label for="origem_google">Google</label>
+          <input id="origem_redes" name="origem" type="radio" value="redes_sociais">
+          <label for="origem_redes">Redes Sociais</label>
+          <input id="origem_indicacao" name="origem" type="radio" value="indicacao">
+          <label for="origem_indicacao">Indicação de amigo</label>
+          <input id="origem_outro" name="origem" type="radio" value="outro">
+          <label for="origem_outro">Outro</label>
+
+          <p>Você recomendaria a ItaPets?</p>
+          <input id="rec_sim" name="recomendaria" type="radio" value="sim">
+          <label for="rec_sim">Sim</label>
+          <input id="rec_nao" name="recomendaria" type="radio" value="nao">
+          <label for="rec_nao">Não</label>
+
+          <label for="nota">Nota geral (1 a 5):</label>
+          <output id="nota_valor">3</output>
+          <input
+            id="nota"
+            max="5"
+            min="1"
+            name="nota"
+            oninput="document.getElementById('nota_valor').value = this.value"
+            step="1"
+            type="range"
+            value="3">
+
+          <label for="comentarios">Comentários:</label>
+          <textarea
+            cols="42"
+            id="comentarios"
+            name="comentarios"
+            placeholder="Deixe aqui o seu comentário ou avaliação sobre o nosso site."
+            required
+            rows="5"
+          ></textarea>
+
+          <button type="reset">Limpar Formulário</button>
+          <button type="submit">Enviar Avaliação</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
 </html>

@@ -12,7 +12,7 @@
     src: url('../../assets/fontes/Oswald-Light.ttf') format('truetype');
 }
 
-.titulo {
+h2 {
     color: #f8f7f6;
     font-family: 'Oswald Bold', sans-serif;
     font-size: 50px;
@@ -21,16 +21,16 @@
     text-align: center;
 }
 
-.sub_titulo {
+h3 {
     color: #f8f7f6;
     font-family: 'Oswald Bold', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     margin: 20px auto;
     padding: 8px 16px;
     text-align: center;
 }
 
-.precos {
+p {
     color: #ffffff;
     font-family: 'Oswald Light', sans-serif;
     font-size: 25px;
