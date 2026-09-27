@@ -12,7 +12,7 @@
     src: url('../../assets/fontes/Oswald-Light.ttf') format('truetype');
 }
 
-h2 {
+h1, h2 {
     color: #f8f7f6;
     font-family: 'Oswald Bold', sans-serif;
     font-size: 50px;
