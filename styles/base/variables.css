@@ -1,0 +1,25 @@
+:root {
+    /* Cores principais */
+    --color-bg: #27A2D9;
+    --color-card-bg: #3193c0;
+    --color-accent: #ff9900;
+    --color-success: #27ae60;
+    --color-danger: #e74c3c;
+
+    /* Cores neutras / texto */
+    --color-text-dark: #1a1a1a;
+    --color-text-light: #ffffff;
+    --color-text-heading: #f8f7f6;
+    --color-border: #ccc;
+
+    /* Tipografia */
+    --font-family-base: 'Oswald', sans-serif;
+    --font-weight-light: 300;
+    --font-weight-bold: 700;
+
+    /* Sombras e Bordas */
+    --box-shadow-card: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --border-radius-sm: 6px;
+    --border-radius-md: 12px;
+    --border-radius-pill: 20px;
+}

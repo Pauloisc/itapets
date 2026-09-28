@@ -1,38 +1,41 @@
 @font-face {
-    font-family: 'Oswald Bold';
+    font-family: 'Oswald';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 700;
     src: url('../../assets/fontes/Oswald-Bold.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Oswald Light';
+    font-family: 'Oswald';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     src: url('../../assets/fontes/Oswald-Light.ttf') format('truetype');
 }
 
 h1, h2 {
-    color: #f8f7f6;
-    font-family: 'Oswald Bold', sans-serif;
+    color: var(--color-text-heading);
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-bold);
     font-size: 50px;
     margin: 20px auto;
     padding: 8px 16px;
     text-align: center;
 }
 
-h3  {
-    color: #f8f7f6;
-    font-family: 'Oswald Bold', sans-serif;
+h3 {
+    color: var(--color-text-heading);
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-bold);
     font-size: 20px;
     margin: 20px auto;
     padding: 8px 16px;
     text-align: center;
 }
 
-h4, summary  {
-    color: #f8f7f6;
-    font-family: 'Oswald Bold', sans-serif;
+h4, summary {
+    color: var(--color-text-heading);
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-bold);
     font-size: 25px;
     margin: 20px auto;
     padding: 8px 16px;
@@ -40,8 +43,9 @@ h4, summary  {
 }
 
 p {
-    color: #ffffff;
-    font-family: 'Oswald Light', sans-serif;
+    color: var(--color-text-light);
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-light);
     font-size: 25px;
     margin: 20px auto;
     padding: 8px 16px;
@@ -49,8 +53,9 @@ p {
 }
 
 .descricoes {
-    color: #ffffff;
-    font-family: 'Oswald Light', sans-serif;
+    color: var(--color-text-light);
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-light);
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 5px;
@@ -61,8 +66,9 @@ p {
 /* Estilos para a página de detalhes do produto */
 
 .detalhes_produto {
-    color: #f8f7f6;
-    font-family: 'Oswald Bold', sans-serif;
+    color: var(--color-text-heading);
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-bold);
     font-size: 30px;
     margin: 20px auto;
     padding: 8px 16px;
@@ -70,67 +76,26 @@ p {
 }
 
 .coluna-texto h2 {
-    color: #1a1a1a;
+    color: var(--color-text-dark);
     margin-top: 0;
 }
 
 .coluna-texto p {
-    color: #1a1a1a;
-    font-family: 'Oswald Light', sans-serif;
+    color: var(--color-text-dark);
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-light);
     line-height: 1.6;
     text-align: justify;
-}
-
-/* Formulario de compra */
-
-label, legend {
-    color: #1a1a1a;
-    display: block;
-    font-family: 'Oswald Bold', sans-serif;
-    margin-bottom: 5px;
-}
-
-form {
-    margin: 0 auto 40px auto;
-    max-width: 600px;
-}
-
-fieldset {
-    background-color: #3193c0;
-    border-radius: 12px;
-    border: none;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-    padding: 30px;
-}
-
-legend {
-    background-color: #ff9900;
-    border-radius: 20px;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 6px 16px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    margin-bottom: 15px;
-    margin-top: 5px;
-    padding: 10px 12px;
-    width: 100%;
 }
 
 /* Tipografias generalistas */
 
 .lista {
-    color: #1a1a1a;
-    font-family: 'Oswald Light', sans-serif;
+    color: var(--color-text-dark);
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-light);
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 5px;
-    text-align: justify;
     text-align: left;
 }

@@ -1,0 +1,43 @@
+form {
+    margin: 0 auto 40px auto;
+    max-width: 600px;
+}
+
+fieldset {
+    background-color: var(--color-card-bg);
+    border-radius: var(--border-radius-md);
+    border: none;
+    box-shadow: var(--box-shadow-card);
+    padding: 30px;
+}
+
+legend {
+    background-color: var(--color-accent);
+    border-radius: var(--border-radius-pill);
+    color: var(--color-text-light);
+    font-weight: var(--font-weight-bold);
+    padding: 6px 16px;
+}
+
+label, legend {
+    display: block;
+    font-family: var(--font-family-base);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 5px;
+}
+
+label {
+    color: var(--color-text-dark);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--color-border);
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    padding: 10px 12px;
+    width: 100%;
+}

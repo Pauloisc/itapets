@@ -1,66 +1,25 @@
 /* Layouts padronizados */
 
-body {
-    background-color: #27A2D9;
-}
-
 header {
     text-align: center;
 }
 
 footer {
-    background: #3193c0;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    background: var(--color-card-bg);
+    box-shadow: var(--box-shadow-card);
     box-sizing: border-box;
     gap: 15px;
     margin: 0 15px;
     padding: 15px;
 }
 
-/* Grid dos produtos */
-
-.grid_produtos {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-    display: grid;
-    gap: 15px;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 15px;
-}
-
-.grid_produtos h2 {
-    grid-column: 1 / -1;
-}
-
-.grid_produtos article a {
-    text-decoration: none;
-}
-
-.grid_produtos article {
-    background: #3193c0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
-    text-align: center;
-}
-
-.grid_produtos article img {
-    animation-range: entry 10% cover 30%;
-    animation-timeline: view();
-    animation: joining linear both;
-    display: block;
-    height: auto;
-    margin: 0 auto;
-    max-width: 100%;
-}
-
 /* Layout da pagina de detalhes do produto */
 
 .container-duas-colunas {
     align-items: flex-start;
-    background-color: #3193c0;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    background-color: var(--color-card-bg);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--box-shadow-card);
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -73,34 +32,6 @@ footer {
 .coluna-texto {
     flex: 1;
     text-align: left;
-}
-
-/* Botões */
-
-button {
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    padding: 12px 20px;
-}
-
-button[type="submit"] {
-    background-color: #27ae60;
-    color: white;
-}
-
-button[type="reset"] {
-    background-color: #e74c3c;
-    color: white;
-    margin-right: 10px;
-}
-
-.grid-buttons-avaliacao {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
 }
 
 /* Responsividade */
