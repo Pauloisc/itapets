@@ -48,8 +48,14 @@ footer {
 }
 
 @media (max-width: 480px) {
+
+    head img, h1 img {
+        max-width: 100%;
+        height: auto;
+    }
+
     body {
-        padding: 5px;
+        padding: 0;
     }
 
     .grid_produtos {
