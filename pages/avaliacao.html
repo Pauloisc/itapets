@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta
+      content="Avalie a ItaPets e deixe seu comentário sobre nossos produtos e atendimento."
+      name="description">
+    <link href="../assets/img/logo.webp" rel="icon" type="image/webp">
+    <title>Avalie a ItaPets | Deixe seu Comentário e Nota</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="../styles/main.css" rel="stylesheet">
+  </head>
+  <body class="min-vh-100 d-flex flex-column">
+    
+    <header class="top-header py-3 mb-4">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a class="d-flex align-items-center text-decoration-none" href="../index.html">
+          <img alt="Logotipo da ItaPets" src="../assets/img/logo.webp" height="50" class="d-inline-block">
+        </a>
+        <a href="../index.html" class="btn btn-outline-light btn-sm fw-bold">
+          <i class="bi bi-house-door-fill me-1"></i> Voltar ao Início
+        </a>
+      </div>
+    </header>
+
+    <main class="container mb-5 flex-grow-1">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-xl-7">
+          <div class="card card-custom p-3 p-md-4">
+            
+            <div class="text-center py-3">
+              <h1 class="h2 text-white fw-bold mb-2">
+                <i class="bi bi-star-fill text-warning me-2"></i>Avaliação e Comentários
+              </h1>
+              <p class="mb-0 text-white-50 fs-6">Sua opinião é muito importante para nós da ItaPets!</p>
+            </div>
+
+            <div class="card-body px-2 px-md-3">
+              <form action="mailto:pauloitalo061@gmail.com" enctype="text/plain" method="POST">
+                
+                <fieldset class="border-0 p-0 m-0">
+                  <legend class="visually-hidden">Seus Dados e Comentários</legend>
+
+                  <h2 class="section-title mb-3 pb-2 fs-5">
+                    <i class="bi bi-person-vcard me-2"></i>Seus Dados e Contato
+                  </h2>
+
+                  <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                      <label for="nome" class="form-label">Nome completo <span class="text-warning">*</span></label>
+                      <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                        <input
+                          id="nome"
+                          name="nome"
+                          class="form-control"
+                          placeholder="Digite seu nome."
+                          required
+                          type="text">
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="email" class="form-label">E-mail <span class="text-warning">*</span></label>
+                      <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                        <input
+                          id="email"
+                          name="email"
+                          class="form-control"
+                          placeholder="emailexemplo@gmail.com"
+                          required
+                          type="email">
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="telefone" class="form-label">Telefone <span class="text-warning">*</span></label>
+                      <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-telephone"></i></span>
+                        <input
+                          id="telefone"
+                          maxlength="15"
+                          name="telefone"
+                          class="form-control"
+                          placeholder="(00) 90000-0000"
+                          required
+                          type="tel">
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <label for="data_compra" class="form-label">Data da compra</label>
+                      <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-calendar-event"></i></span>
+                        <input id="data_compra" name="data_compra" class="form-control" type="date">
+                      </div>
+                    </div>
+                  </div>
+
+                  <h2 class="section-title mb-3 pb-2 fs-5">
+                    <i class="bi bi-bag-check me-2"></i>Detalhes da Experiência
+                  </h2>
+
+                  <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                      <label for="tipo_pet" class="form-label">Tipo de pet</label>
+                      <select id="tipo_pet" name="tipo_pet" class="form-select">
+                        <option value="">Selecione...</option>
+                        <option value="cao">Cão</option>
+                        <option value="gato">Gato</option>
+                        <option value="roedor">Roedor (Hamster, Gerbil...)</option>
+                        <option value="passaro">Pássaro</option>
+                        <option value="outro">Outro</option>
+                      </select>
+                    </div>
+
+                    <div class="col-md-6">
+                      <p class="form-legend mb-2">Categorias que você comprou:</p>
+                      <div class="d-flex flex-wrap gap-3 pt-1">
+                        <div class="form-check">
+                          <input id="cat_racao" name="categorias" class="form-check-input" type="checkbox" value="racao">
+                          <label for="cat_racao" class="form-check-label">Ração</label>
+                        </div>
+                        <div class="form-check">
+                          <input id="cat_brinquedo" name="categorias" class="form-check-input" type="checkbox" value="brinquedo">
+                          <label for="cat_brinquedo" class="form-check-label">Brinquedo</label>
+                        </div>
+                        <div class="form-check">
+                          <input id="cat_acessorio" name="categorias" class="form-check-input" type="checkbox" value="acessorio">
+                          <label for="cat_acessorio" class="form-check-label">Acessório</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <p class="form-legend mb-2">Como nos conheceu?</p>
+                      <div class="d-flex flex-column gap-1">
+                        <div class="form-check">
+                          <input id="origem_google" name="origem" class="form-check-input" type="radio" value="google">
+                          <label for="origem_google" class="form-check-label">Google</label>
+                        </div>
+                        <div class="form-check">
+                          <input id="origem_redes" name="origem" class="form-check-input" type="radio" value="redes_sociais">
+                          <label for="origem_redes" class="form-check-label">Redes Sociais</label>
+                        </div>
+                        <div class="form-check">
+                          <input id="origem_indicacao" name="origem" class="form-check-input" type="radio" value="indicacao">
+                          <label for="origem_indicacao" class="form-check-label">Indicação de amigo</label>
+                        </div>
+                        <div class="form-check">
+                          <input id="origem_outro" name="origem" class="form-check-input" type="radio" value="outro">
+                          <label for="origem_outro" class="form-check-label">Outro</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <p class="form-legend mb-2">Você recomendaria a ItaPets?</p>
+                      <div class="d-flex gap-4 pt-1">
+                        <div class="form-check">
+                          <input id="rec_sim" name="recomendaria" class="form-check-input" type="radio" value="sim">
+                          <label for="rec_sim" class="form-check-label">
+                            <i class="bi bi-hand-thumbs-up text-warning me-1"></i> Sim
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input id="rec_nao" name="recomendaria" class="form-check-input" type="radio" value="nao">
+                          <label for="rec_nao" class="form-check-label">
+                            <i class="bi bi-hand-thumbs-down me-1"></i> Não
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h2 class="section-title mb-3 pb-2 fs-5">
+                    <i class="bi bi-chat-left-heart me-2"></i>Sua Nota e Comentários
+                  </h2>
+
+                  <div class="mb-4 range-container p-3 border border-white-50">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <label for="nota" class="form-label mb-0">Nota geral (1 a 5):</label>
+                      <span class="badge badge-nota fs-6 px-3 py-2 rounded-pill">
+                        <i class="bi bi-star-fill me-1"></i><output id="nota_valor" for="nota">3</output>
+                      </span>
+                    </div>
+                    <input
+                      id="nota"
+                      max="5"
+                      min="1"
+                      name="nota"
+                      class="form-range"
+                      oninput="document.getElementById('nota_valor').value = this.value"
+                      step="1"
+                      type="range"
+                      value="3">
+                    <div class="d-flex justify-content-between text-white-50 small px-1">
+                      <span>1 (Péssimo)</span>
+                      <span>3 (Regular)</span>
+                      <span>5 (Excelente)</span>
+                    </div>
+                  </div>
+
+                  <div class="mb-4">
+                    <label for="comentarios" class="form-label">Comentários: <span class="text-warning">*</span></label>
+                    <textarea
+                      id="comentarios"
+                      name="comentarios"
+                      class="form-control"
+                      placeholder="Deixe aqui o seu comentário ou avaliação sobre o nosso site."
+                      required
+                      rows="5"
+                    ></textarea>
+                  </div>
+
+                  <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 pt-3">
+                    <button type="reset" class="btn btn-reset-custom px-4 py-2">
+                      Limpar Formulário
+                    </button>
+                    <button type="submit" class="btn btn-submit-custom px-5 py-2">
+                      Enviar Avaliação
+                    </button>
+                  </div>
+
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer-bar text-white py-4 mt-auto">
+      <div class="container text-center">
+        <p class="mb-0 descricoes">&copy; ItaPets - Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

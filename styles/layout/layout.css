@@ -13,6 +13,11 @@ footer {
     padding: 15px;
 }
 
+.top-header, .footer-bar {
+    background-color: var(--color-card-bg) !important;
+    box-shadow: var(--box-shadow-card);
+}
+
 /* Layout da pagina de detalhes do produto */
 
 .container-duas-colunas {

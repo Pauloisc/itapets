@@ -23,3 +23,25 @@ button[type="reset"] {
     gap: 10px;
     margin-top: 20px;
 }
+
+.btn-submit-custom {
+    background-color: var(--color-success) !important;
+    color: var(--color-text-light) !important;
+    border: none;
+    font-weight: var(--font-weight-bold);
+}
+
+.btn-submit-custom:hover {
+    opacity: 0.9;
+}
+
+.btn-reset-custom {
+    background-color: var(--color-danger) !important;
+    color: var(--color-text-light) !important;
+    border: none;
+    font-weight: var(--font-weight-bold);
+}
+
+.btn-reset-custom:hover {
+    opacity: 0.9;
+}

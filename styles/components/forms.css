@@ -41,3 +41,48 @@ input[type="tel"] {
     padding: 10px 12px;
     width: 100%;
 }
+
+.card-custom {
+    background-color: var(--color-card-bg) !important;
+    box-shadow: var(--box-shadow-card);
+    border-radius: var(--border-radius-md);
+    border: none;
+    color: var(--color-text-light);
+}
+
+.section-title {
+    color: var(--color-accent) !important;
+    border-bottom: 2px solid var(--color-accent);
+    font-weight: var(--font-weight-bold);
+}
+
+.form-label, p.form-legend {
+    color: var(--color-text-light) !important;
+    font-weight: var(--font-weight-bold);
+}
+
+.badge-nota {
+    background-color: var(--color-accent) !important;
+    color: var(--color-text-light) !important;
+    font-weight: var(--font-weight-bold);
+}
+
+.form-check-label {
+    color: var(--color-text-light) !important;
+}
+
+.form-control, .form-select {
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--color-border);
+}
+
+.input-group-text {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-color: var(--color-border);
+    color: var(--color-text-dark);
+}
+
+.range-container {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius-sm);
+}

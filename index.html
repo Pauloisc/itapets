@@ -4,52 +4,63 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ItaPets - A sua loja de produtos para animais de estimação. Rações, brinquedos e acessórios para cães e gatos.">
-    <link href="assets/img/logo.webp" rel="icon">
+    <link href="assets/img/logo.webp" rel="icon" type="image/webp">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
     <title>ItaPets | Loja de Produtos para Pets — Rações, Brinquedos e Acessórios</title>
   </head>
-  <body>
-    <header class="header">
-      <h1>
-        <img alt="Logotipo da ItaPets" src="assets/img/logo.webp">
-      </h1>
+  <body class="min-vh-100 d-flex flex-column">
+    
+    <header class="top-header py-3 mb-4">
+      <div class="container d-flex justify-content-between align-items-center">
+        <a class="d-flex align-items-center text-decoration-none" href="index.html">
+          <img alt="Logotipo da ItaPets" src="assets/img/logo.webp" height="50" class="d-inline-block">
+        </a>
+        <h1 class="visually-hidden">ItaPets - Loja de Produtos para Pets</h1>
+        <a href="pages/avaliacao.html" class="btn btn-outline-light btn-sm fw-bold">
+          <i class="bi bi-star-fill text-warning me-1"></i> Avaliar a Loja
+        </a>
+      </div>
     </header>
-    <main>
+
+    <main class="flex-grow-1">
       <section class="grid_produtos">
         <h2>Rações</h2>
         <article>
-          <a href="pgns/racao-seca-cachorro-adulto-pedigree-900g.html">
+          <a href="pages/racao-seca-cachorro-adulto-pedigree-900g.html">
             <h3>Ração Seca Cachorro Adulto 900g - Pedigree</h3>
             <img
               alt="Pacote de ração para cachorros adultos da Pedigree"
-              src="assets/img/racoes/racao-seca-cachorro-adulto-pedigree-900g.webp">
+              src="assets/img/racoes/racao-seca-cachorro-adulto-pedigree-900g-thumb.webp">
           </a>
           <p>Preço: R$ 100,00</p>
         </article>
         <article>
-          <a href="pgns/racao-seca-gatos-castrados-whiskas-10kg.html">
+          <a href="pages/racao-seca-gatos-castrados-whiskas-10kg.html">
             <h3>Ração Seca Gatos Castrados 10kg - Whiskas</h3>
             <img
               alt="Ração Seca Gatos Castrados da Whiskas"
-              src="assets/img/racoes/racao-seca-gatos-castrados-whiskas-10kg.webp">
+              src="assets/img/racoes/racao-seca-gatos-castrados-whiskas-10kg-thumb.webp">
           </a>
           <p>Preço: R$ 126,00</p>
         </article>
         <article>
-          <a href="pgns/sache-de-molho-de-caes-dog-chow-5kg.html">
+          <a href="pages/sache-de-molho-de-caes-dog-chow-5kg.html">
             <h3>Sachê de Molho para Cães 5kg - Dog Chow</h3>
             <img
               alt="Sachê de Molho para Cães da Dog Chow"
-              src="assets/img/racoes/sache-de-molho-para-caes-dog-chow-5kg.webp">
+              src="assets/img/racoes/sache-de-molho-para-caes-dog-chow-5kg-thumb.webp">
           </a>
           <p>Preço: R$ 150,00</p>
         </article>
         <article>
-          <a href="pgns/racao-megazoo-hamster-gerbil-300g.html">
+          <a href="pages/racao-megazoo-hamster-gerbil-300g.html">
             <h3>Ração Megazoo para Hamster e Gerbil 300g - Megazoo</h3>
             <img
               alt="Ração Megazoo para Hamster e Gerbil"
-              src="assets/img/racoes/racao-megazoo-hamster-gerbil-300g.webp">
+              src="assets/img/racoes/racao-megazoo-hamster-gerbil-300g-thumb.webp">
           </a>
           <p>Preço: R$ 80,00</p>
         </article>
@@ -58,38 +69,38 @@
       <section class="grid_produtos">
         <h2>Brinquedos</h2>
         <article>
-          <a href="pgns/bola-de-borracha-macica-cachorro.html">
+          <a href="pages/bola-de-borracha-macica-cachorro.html">
             <h3>Bola de Borracha Maçica para Cachorro</h3>
             <img
               alt="Bola de Borracha Maçica para Cachorro"
-              src="assets/img/brinquedos/bola-de-borracha-macica-cachorro.webp">
+              src="assets/img/brinquedos/bola-de-borracha-macica-cachorro-thumb.webp">
           </a>
           <p>Preço: R$ 20,00</p>
         </article>
         <article>
-          <a href="pgns/arranhador-em-torre-com-bolinha-gatos.html">
+          <a href="pages/arranhador-em-torre-com-bolinha-gatos.html">
             <h3>Arranhador em Torre com Bolinha para Gatos</h3>
             <img
               alt="Arranhador em Torre com Bolinha para Gatos"
-              src="assets/img/brinquedos/arranhador-em-torre-com-bolinha-gatos.webp">
+              src="assets/img/brinquedos/arranhador-em-torre-com-bolinha-gatos-thumb.webp">
           </a>
           <p>Preço: R$ 60,00</p>
         </article>
         <article>
-          <a href="pgns/brinquedo-interativo-recheavel-cachorros.html">
+          <a href="pages/brinquedo-interativo-recheavel-cachorros.html">
             <h3>Brinquedo Interativo Recheável para Cachorros</h3>
             <img
               alt="Brinquedo Interativo Recheável para Cachorros"
-              src="assets/img/brinquedos/brinquedo-interativo-recheavel-cachorros.webp">
+              src="assets/img/brinquedos/brinquedo-interativo-recheavel-cachorros-thumb.webp">
           </a>
           <p>Preço: R$ 35,00</p>
         </article>
         <article>
-          <a href="pgns/varinha-com-penas-e-chocalho-gatos.html">
+          <a href="pages/varinha-com-penas-e-chocalho-gatos.html">
             <h3>Varinha com Penas e Chocalho para Gatos</h3>
             <img
               alt="Varinha com Penas e Chocalho para Gatos"
-              src="assets/img/brinquedos/varinha-com-penas-e-chocalho-gatos.webp">
+              src="assets/img/brinquedos/varinha-com-penas-e-chocalho-gatos-thumb.webp">
           </a>
           <p>Preço: R$ 25,00</p>
         </article>
@@ -98,64 +109,50 @@
       <section class="grid_produtos">
         <h2>Acessórios</h2>
         <article>
-          <a href="pgns/cama-almofadada-pets-tamanho-m.html">
+          <a href="pages/cama-almofadada-pets-tamanho-m.html">
             <h3>Cama Almofadada para Pets (Tamanho M)</h3>
             <img
               alt="Cama Almofadada para Pets (Tamanho M)"
-              src="assets/img/acessorios/cama-almofada-para-pets-tamanho-m.webp">
+              src="assets/img/acessorios/cama-almofada-para-pets-tamanho-m-thumb.webp">
           </a>
           <p>Preço: R$ 90,00</p>
         </article>
         <article>
-          <a href="pgns/shampoo-neutro-powercat-500ml.html">
+          <a href="pages/shampoo-neutro-powercat-500ml.html">
             <h3>Shampoo Neutro para Cães e Gatos - Power Cat (500ml)</h3>
             <img
               alt="Shampoo Neutro para Cães e Gatos (500ml)"
-              src="assets/img/acessorios/shampoo-neutro-powercat-500ml.webp">
+              src="assets/img/acessorios/shampoo-neutro-powercat-500ml-thumb.webp">
           </a>
           <p>Preço: R$ 30,00</p>
         </article>
         <article>
-          <a href="pgns/guia-e-coleira-peitoral-para-cachorros.html">
+          <a href="pages/guia-e-coleira-peitoral-para-cachorros.html">
             <h3>Guia e Coleira Peitoral para cachorros</h3>
             <img
               alt="Guia e Coleira Peitoral para cachorros"
-              src="assets/img/acessorios/guia-e-coleira-peitoral-para-cachorros.webp">
+              src="assets/img/acessorios/guia-e-coleira-peitoral-para-cachorros-thumb.webp">
           </a>
           <p>Preço: R$ 45,00</p>
         </article>
         <article>
-          <a href="pgns/escova-rasqueadeira-para-pelos.html">
+          <a href="pages/escova-rasqueadeira-para-pelos.html">
             <h3>Escova Rasqueadeira para Pelos</h3>
             <img
               alt="Escova Rasqueadeira para Pelos"
-              src="assets/img/acessorios/escova-rasqueadeira-para-pelos.webp">
+              src="assets/img/acessorios/escova-rasqueadeira-para-pelos-thumb.webp">
           </a>
           <p>Preço: R$ 25,00</p>
         </article>
       </section>
     </main>
-    <footer>
-      <details>
-        <summary>Sobre nós</summary>
-        <p class="descricoes">
-          Nossa empresa é dedicada a fornecer os melhores produtos e serviços para os amantes de
-          animais. Com anos de experiência no mercado, nos comprometemos com a qualidade e o
-          bem-estar dos pets.
-        </p>
-        <h4 class="sub_titulo">Contato</h4>
-        <address>
-          <p class="descricoes">Telefone: (79) 1234-5678</p>
-          <p class="descricoes">
-            Email:
-            <a href="mailto:contato@itapets.com">contato@itapets.com</a>
-          </p>
-        </address>
-        <p class="descricoes">
-          Quer avaliar o nosso site ou produtos? Faça já a sua
-          <a href="pgns/avaliacao.html">avaliação!</a>
-        </p>
-      </details>
+
+    <footer class="footer-bar text-white py-4 mt-auto">
+      <div class="container text-center">
+        <p class="mb-0 descricoes">&copy; ItaPets - Todos os direitos reservados.</p>
+      </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
