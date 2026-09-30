@@ -39,6 +39,88 @@ footer {
     text-align: left;
 }
 
+/* Layout da pagina de carrinho */
+
+.container-carrinho {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.15); 
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; 
+}
+
+.item-carrinho {
+  display: grid;
+  grid-template-columns: 120px 1fr auto; 
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.item-imagem {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-imagem img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #333;
+}
+
+.item-info h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #111;
+}
+
+.item-info p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.btn-remover {
+  background-color: transparent;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.btn-remover:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.carrinho-vazio {
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
 /* Responsividade */
 
 @media (max-width: 768px) {

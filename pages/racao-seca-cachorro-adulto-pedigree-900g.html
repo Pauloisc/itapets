@@ -20,11 +20,14 @@
           <img alt="Logotipo da ItaPets" src="../assets/img/logo.webp" height="50" class="d-inline-block">
         </a>
         <div class="d-flex gap-2">
-          <a href="../index.html" class="btn btn-outline-light btn-sm fw-bold">
-            <i class="bi bi-house-door-fill me-1"></i> Voltar ao Início
-          </a>
           <a href="avaliacao.html" class="btn btn-outline-light btn-sm fw-bold">
             <i class="bi bi-star-fill text-warning me-1"></i> Avaliar
+          </a>
+          <a href="carrinho.html" class="btn btn-outline-light btn-sm fw-bold">
+            <i class="bi bi-cart"></i> Carrinho
+          </a>
+          <a href="../index.html" class="btn btn-outline-light btn-sm fw-bold">
+            <i class="bi bi-house-door-fill me-1"></i> Voltar ao Início
           </a>
         </div>
       </div>
@@ -52,6 +55,15 @@
               <li>Indicado para: Cães Adultos</li>
             </ul>
           </details>
+          <button
+            type="button"
+            class="btn-adicionar-carrinho d-flex justify-content-center btn btn-add-bi-cart"
+            data-id="prod_001"
+            data-nome="Ração Seca Cachorro Adulto 900g - Pedigree"
+            data-preco="100.00"
+            data-imagem="../assets/img/racoes/racao-seca-cachorro-adulto-pedigree-900g.webp">
+            <i class="bi bi-cart"></i> Adicionar ao Carrinho
+          </button>
         </div>
       </div>
     </main>
@@ -63,5 +75,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/carrinho.js"></script>
   </body>
 </html>
+
