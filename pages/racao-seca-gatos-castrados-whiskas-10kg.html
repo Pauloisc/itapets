@@ -23,7 +23,6 @@
           <a href="avaliacao.html" class="btn btn-outline-light btn-sm fw-bold">
             <i class="bi bi-star-fill text-warning me-1"></i> Avaliar
           </a>
-          <a href="carrinho.html" class="btn btn-outline-light btn-sm fw-bold"><i class="bi bi-cart"></i> Carrinho</a>
           <a href="../index.html" class="btn btn-outline-light btn-sm fw-bold">
             <i class="bi bi-house-door-fill me-1"></i> Voltar ao Início
           </a>
@@ -36,9 +35,28 @@
       <p>Preço: R$ 126,00</p>
       <div class="container-duas-colunas">
         <div class="coluna-imagem">
-          <img
-            alt="Ração Seca Gatos Castrados da Whiskas"
-            src="../assets/img/racoes/racao-seca-gatos-castrados-whiskas-10kg.webp">
+          <div id="carousel-racao-seca-gatos-castrados-whiskas-10kg" class="carousel slide carousel-dark" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel-racao-seca-gatos-castrados-whiskas-10kg" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Foto 1"></button>
+              <button type="button" data-bs-target="#carousel-racao-seca-gatos-castrados-whiskas-10kg" data-bs-slide-to="1" aria-label="Foto 2"></button>
+            </div>
+            <div class="carousel-inner rounded shadow-sm">
+              <div class="carousel-item active">
+                <img src="../assets/img/racoes/racao-seca-gatos-castrados-whiskas-10kg.webp" class="d-block w-100" alt="Ração Seca Gatos Castrados da Whiskas - Foto Principal">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/img/racoes/racao-seca-gatos-castrados-whiskas-10kg-thumb.webp" class="d-block w-100" alt="Ração Seca Gatos Castrados da Whiskas - Foto Detalhes">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-racao-seca-gatos-castrados-whiskas-10kg" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-racao-seca-gatos-castrados-whiskas-10kg" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
         </div>
         <div class="coluna-texto">
           <p class="p">
@@ -53,15 +71,6 @@
               <li>Indicado para: Gatos Castrados</li>
             </ul>
           </details>
-          <button
-            type="button"
-            class="btn-adicionar-carrinho d-flex justify-content-center btn btn-add-bi-cart"
-            data-id="prod_009"
-            data-nome="Ração Seca Gatos Castrados 10kg - Whiskas"
-            data-preco="126.00"
-            data-imagem="../assets/img/racoes/racao-seca-gatos-castrados-whiskas-10kg.webp">
-            <i class="bi bi-cart"></i> Adicionar ao Carrinho
-          </button>
         </div>
       </div>
     </main>
@@ -74,7 +83,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/carrinho.js"></script>
+    <script src="../js/dark-mode.js"></script>
+    <script src="../js/back-to-top.js"></script>
   </body>
 </html>
 

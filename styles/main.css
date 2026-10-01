@@ -13,3 +13,6 @@
 
 /* Utilitários */
 @import 'utils/animations.css';
+
+/* Dark Mode */
+@import 'components/dark-mode.css';

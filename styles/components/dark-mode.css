@@ -1,0 +1,117 @@
+/* Estilos do Modo Escuro */
+body.dark-mode {
+    --color-bg: #121212;
+    --color-card-bg: #1e1e1e;
+    --color-text-dark: #e0e0e0;
+    --color-text-light: #f8f9fa;
+    --color-text-heading: #ffffff;
+    --color-border: #333333;
+    --box-shadow-card: 0 8px 24px rgba(0, 0, 0, 0.6);
+
+    background-color: #121212 !important;
+    color: #e0e0e0 !important;
+}
+
+/* Header e Footer */
+body.dark-mode header,
+body.dark-mode .top-header {
+    background-color: #181818 !important;
+    border-bottom: 1px solid #2b2b2b;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5) !important;
+}
+
+body.dark-mode footer,
+body.dark-mode .footer-bar {
+    background-color: #181818 !important;
+    border-top: 1px solid #2b2b2b;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.5) !important;
+}
+
+body.dark-mode .footer-bar p,
+body.dark-mode footer p {
+    color: #a0a0a0 !important;
+}
+
+/* Grids de Produtos */
+body.dark-mode .grid_produtos {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+body.dark-mode .grid_produtos h2 {
+    color: #ffffff !important;
+    border-bottom: 2px solid #2b2b2b;
+    padding-bottom: 8px;
+}
+
+body.dark-mode .grid_produtos article {
+    background-color: #1e1e1e !important;
+    border: 1px solid #2e2e2e;
+    border-radius: var(--border-radius-md);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+body.dark-mode .grid_produtos article:hover {
+    background-color: #262626 !important;
+    border-color: #444444;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+body.dark-mode .grid_produtos article h3 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .grid_produtos article p {
+    color: #ffb703 !important;
+    font-weight: bold;
+}
+
+/* Detalhes do Produto */
+body.dark-mode .container-duas-colunas {
+    background-color: #1e1e1e !important;
+    border: 1px solid #2e2e2e;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .detalhes_produto {
+    color: #ffffff !important;
+}
+
+body.dark-mode .coluna-texto h2 {
+    color: #ffffff !important;
+}
+
+body.dark-mode .coluna-texto p,
+body.dark-mode .lista {
+    color: #cfd4da !important;
+}
+
+/* Formulário de Avaliação e Cards */
+body.dark-mode .card,
+body.dark-mode .card-custom {
+    background-color: #1e1e1e !important;
+    border: 1px solid #2e2e2e !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+    background-color: #272727 !important;
+    border-color: #3d3d3d !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .form-control:focus,
+body.dark-mode .form-select:focus {
+    background-color: #2f2f2f !important;
+    color: #ffffff !important;
+    border-color: #ff9900 !important;
+}
+
+body.dark-mode .input-group-text {
+    background-color: #333333 !important;
+    border-color: #3d3d3d !important;
+    color: #ffffff !important;
+}
