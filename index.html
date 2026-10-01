@@ -18,12 +18,8 @@
         <a class="d-flex align-items-center text-decoration-none" href="index.html">
           <img alt="Logotipo da ItaPets" src="assets/img/logo.webp" height="50" class="d-inline-block">
         </a>
-        <h1 class="visually-hidden">ItaPets - Loja de Produtos para Pets</h1>
         <div class="d-flex gap-2">
-          <button type="button" class="btn btn-warning btn-sm fw-bold" data-bs-toggle="modal" data-bs-target="#modalCupom" title="Clique para ver o cupom!">
-            <i class="bi bi-tag-fill me-1"></i> Cupom 10%
-          </button>
-          <a href="pages/avaliacao.html" class="btn btn-outline-light btn-sm fw-bold" data-bs-toggle="tooltip" data-bs-title="Deixe sua avaliação sobre nossa loja">
+          <a href="pages/avaliacao.html" class="btn btn-outline-light btn-sm fw-bold" data-bs-toggle="tooltip" title="Deixe sua avaliação sobre nossa loja">
             <i class="bi bi-star-fill text-warning me-1"></i> Avaliar
           </a>
         </div>
@@ -31,6 +27,17 @@
     </header>
 
     <main class="flex-grow-1">
+      <h1 class="visually-hidden">ItaPets - Loja de Produtos para Pets</h1>
+
+      <!-- Componente Alerta Dispensável (Bootstrap Alert) -->
+      <div class="container my-3">
+        <div class="alert alert-warning alert-dismissible fade show text-center mb-0" role="alert">
+          <i class="bi bi-tag-fill me-2"></i>
+          <strong>Promoção Especial:</strong> Ganhe 10% de desconto na primeira compra com o cupom <strong>ITAPETS10</strong>!
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+        </div>
+      </div>
+
       <section class="grid_produtos">
         <h2>Rações</h2>
         <article>
@@ -152,28 +159,6 @@
       </section>
     </main>
 
-    <!-- Componente Modal do Bootstrap -->
-    <div class="modal fade" id="modalCupom" tabindex="-1" aria-labelledby="modalCupomLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalCupomLabel">
-              <i class="bi bi-gift-fill text-warning me-2"></i>Cupom Especial ItaPets
-            </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-          </div>
-          <div class="modal-body text-center py-4">
-            <p class="mb-2 fs-5">Aproveite 10% de desconto na sua compra!</p>
-            <span class="badge bg-warning text-dark fs-4 px-4 py-2">ITAPETS10</span>
-            <p class="text-muted small mt-3 mb-0">Use este código no atendimento ou checkout.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Fechar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <footer class="footer-bar text-white py-4 mt-auto">
       <div class="container text-center">
         <p class="mb-0 descricoes">&copy; ItaPets - Todos os direitos reservados.</p>
@@ -186,7 +171,9 @@
     <script>
       // Componente Tooltip do Bootstrap
       const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-      tooltipTriggerList.forEach(el => new bootstrap.Tooltip(el));
+      tooltipTriggerList.forEach(function (el) {
+        new bootstrap.Tooltip(el);
+      });
     </script>
   </body>
 </html>

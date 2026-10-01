@@ -75,6 +75,11 @@ body.dark-mode .container-duas-colunas {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
+body.dark-mode .coluna-imagem .carousel-inner {
+    background-color: #242424 !important;
+    border: 1px solid #333333;
+}
+
 body.dark-mode .detalhes_produto {
     color: #ffffff !important;
 }
